@@ -1,0 +1,11 @@
+<html>
+<head>
+    <link href="/assets/css/index.css" rel="stylesheet" />
+    {{#css}}
+        <link href="/assets/css/{{.}}.css" rel="stylesheet" />
+    {{/css}}
+    {{#js}}
+        <script src="/assets/js/{{.}}.js"></script>
+    {{/js}}
+</head>
+<body>

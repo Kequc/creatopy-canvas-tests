@@ -1,0 +1,8 @@
+#video-page {
+}
+
+#video-wrapper, #canvas-wrapper {
+    background-color: lightgrey;
+    width: fit-content;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,82 @@
+#html-page {
+}
+
+#html-wrapper, #canvas-wrapper {
+    background-image: linear-gradient(to top left, lightgrey, yellow);
+    width: fit-content;
+    margin-bottom: 2rem;
+    height: 500px;
+    width: 850px;
+}
+
+#html-wrapper  textarea {
+    padding: 15px;
+    border: 1px solid grey;
+    cursor: text;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#html-wrapper .js-ball, #html-wrapper .css-ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+#html-wrapper .js-ball {
+    background-color: red;
+}
+#html-wrapper .css-ball {
+    background-color: blue;
+}
+#html-wrapper .js-ball span, #html-wrapper .css-ball span {
+    display: block;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 0.9rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+#html-wrapper .css-ball {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#controls label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#controls input[type="button"] {
+    padding: 15px 30px;
+    background-color: orange;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+#controls input[type="button"]:hover {
+    background-color: greenyellow;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
